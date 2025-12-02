@@ -3,73 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>N&SF Locação de Veículos | Fretamento em Mogi das Cruzes</title>
+    <title>N&SF Locação de Veículos | Vans e Fretamento em Mogi das Cruzes</title>
     <style>
-        /* Estilo Simples e Limpo (FOSS friendly) */
-        :root { --cor-primaria: #0056b3; --cor-texto: #333; --cor-fundo: #f4f4f4; }
-        body { font-family: sans-serif; margin: 0; padding: 0; color: var(--cor-texto); line-height: 1.6; }
-        header { background: var(--cor-primaria); color: white; padding: 20px; text-align: center; }
-        header h1 { margin: 0; }
-        .hero { background: #e9ecef; padding: 60px 20px; text-align: center; }
-        .btn { background: #25d366; color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; margin-top: 10px; }
-        .container { max-width: 960px; margin: auto; padding: 20px; }
+        /* Estilos Gerais (Obrigado FOSS) */
+        :root { --cor-primaria: #004080; --cor-texto: #333; --cor-fundo: #f9f9f9; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: var(--cor-texto); background: var(--cor-fundo); line-height: 1.6; }
+        
+        /* Cabeçalho */
+        header { background: var(--cor-primaria); color: white; padding: 30px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        
+        /* Botão WhatsApp */
+        .btn-whats { background: #25d366; color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 50px; display: inline-block; margin-top: 20px; font-size: 1.1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .btn-whats:hover { transform: scale(1.05); background: #20bd5a; }
+
+        /* Seções */
+        .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+        h2 { text-align: center; color: var(--cor-primaria); margin-bottom: 40px; border-bottom: 2px solid #ddd; padding-bottom: 10px; display: inline-block; }
+        .center-title { text-align: center; width: 100%; }
+
+        /* Serviços */
         .servicos { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex: 1; min-width: 250px; }
-        footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 40px; font-size: 0.9em; }
+        .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); flex: 1; min-width: 280px; text-align: center; border-top: 5px solid var(--cor-primaria); }
+
+        /* Quem Somos (Família) */
+        .team { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+        .team-member { background: white; padding: 20px; border-radius: 10px; text-align: center; width: 250px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .team-member img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 3px solid var(--cor-primaria); }
+        .team-member h4 { margin: 10px 0 5px 0; color: var(--cor-primaria); }
+        .team-member p { font-size: 0.9rem; color: #666; margin: 0; }
+
+        /* Fotos das Vans (Galeria) */
+        .gallery { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        /* Aqui o código procura as imagens que você subirá */
+        .gallery img { width: 100%; max-width: 500px; height: 300px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        
+        /* Rodapé */
+        footer { background: #222; color: white; text-align: center; padding: 40px 20px; margin-top: 40px; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>N&SF Locação de Veículos</h1>
-        <p>Segurança e conforto em Mogi das Cruzes e Região</p>
+        <p>Conforto, Segurança e Pontualidade em Mogi das Cruzes</p>
+        <a href="https://wa.me/5511999999999" class="btn-whats">📲 Fazer Orçamento no WhatsApp</a>
     </header>
 
-    <div class="hero">
-        <h2>Precisa de transporte para sua equipe ou evento?</h2>
-        <p>Especialistas em fretamento e transporte de passageiros.</p>
-        <a href="https://wa.me/551198223145" class="btn">Orçamento via WhatsApp</a>
-  <div class="servicos">
+    <div class="container">
+        <div class="center-title"><h2>Nossos Serviços</h2></div>
+        <div class="servicos">
             <div class="card">
-                <h4>🏢 Fretamento Empresarial</h4>
-                <p>Transporte seguro para funcionários de empresas e indústrias em Mogi das Cruzes e região.</p>
+                <h3>🏢 Fretamento Empresarial</h3>
+                <p>Transporte exclusivo para funcionários. Garanta que sua equipe chegue segura e descansada ao trabalho.</p>
             </div>
             <div class="card">
-                <h4>✈️ Transfer e Aeroportos</h4>
-                <p>Serviço de leva e trás para GRU, CGH e VCP. Sem atrasos, com conforto e pontualidade.</p>
+                <h3>✈️ Transfer e Aeroportos</h3>
+                <p>Levamos sua família ou grupo para Guarulhos, Congonhas e Viracopos com total pontualidade.</p>
             </div>
             <div class="card">
-                <h4>🏖️ Viagens e Eventos</h4>
-                <p>Excursões, eventos religiosos, casamentos e viagens para praias e turismo em geral.</p>
+                <h3>🏖️ Viagens e Turismo</h3>
+                <p>Excursões para praias, eventos e viagens de lazer em geral.</p>
             </div>
         </div>
-        ```
+    </div>
 
-5.  Role até o final da página e clique no botão verde **"Commit changes"** para salvar.
+    <div style="background-color: #e9ecef;">
+        <div class="container">
+            <div class="center-title"><h2>Nossa Frota</h2></div>
+            <p style="text-align:center; margin-bottom:30px;">Veículos modernos, com ar-condicionado e vistoriados, ideais para o seu grupo.</p>
+            <div class="gallery">
+                <img src="van1.jpg" alt="Foto da nossa Van Externa">
+                <img src="van2.jpg" alt="Foto do Interior ou outra Van">
+            </div>
+        </div>
+    </div>
 
----
+    <div class="container">
+        <div class="center-title"><h2>Quem Somos</h2></div>
+        <p style="text-align:center; max-width: 800px; margin: 0 auto 40px auto;">
+            A <strong>N&SF</strong> é uma empresa estritamente familiar. Nós cuidamos do transporte da sua família como se fosse a nossa.
+            Atuamos em Mogi das Cruzes com seriedade e transparência.
+        </p>
+        
+        <div class="team">
+            <div class="team-member">
+                <img src="pai.jpg" alt="Foto do Pai">
+                <h4>Nome do Pai</h4> 
+                <p>Função do Pai</p>
+            </div>
 
-Seu site estará corrigido em 1 minuto!
+            <div class="team-member">
+                <img src="mae.jpg" alt="Foto da Mãe">
+                <h4>Nome da Mãe</h4> 
+                <p>Função da Mãe</p>
+            </div>
 
-**Conseguiu substituir o bloco?** Se sim, o próximo passo é a gente colocar os **nomes dos seus pais** no código e subir as fotos!
-
-        <hr style="margin: 40px 0; border: 0; border-top: 1px solid #ddd;">
-
-        <div style="text-align:center;">
-            <h3>Sobre a Empresa</h3>
-            <p>A <strong>N&SF Locação de Veículos</strong> atua com seriedade no transporte de passageiros. 
-            Empresa devidamente constituída em Mogi das Cruzes.</p>
-            <p><strong>CNPJ:</strong> 18.549.156/0001-91</p>
+            <div class="team-member">
+                <img src="gabriel.jpg" alt="Sua Foto">
+                <h4>Gabriel Prado</h4>
+                <p>Administrativo e Agendamento</p>
+            </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 N&SF Locação de Veículos. Todos os direitos reservados.</p>
+        <h3>N&SF Locação de Veículos Ltda</h3>
+        <p>CNPJ: 18.549.156/0001-91</p>
         <p>Mogi das Cruzes - SP</p>
+        <br>
+        <p style="font-size: 0.8rem; opacity: 0.7;">&copy; 2025 Todos os direitos reservados.</p>
     </footer>
 
 </body>
-
 </html>
-
-
